@@ -8,9 +8,19 @@
   </head>
   <body>
     <div class="container">
+    <h4>Ping Pong:</h4>
       <form id="ping-pong-form">
         <label for="goal">Enter a number:</label>
         <input id="goal" type="number">
+        <button type="submit" class="btn teal">Submit</button>
+      </form>
+      <h4>Do some math here:</h4>
+      <form id="math-form" class="row">
+        <input type="text" id="num1" class="col m5">
+        <select id="operator" class="col m2">
+          <option value="add">+</option>
+        </select>
+        <input type="text" id="num2" class="col m5">
         <button type="submit" class="btn teal">Submit</button>
       </form>
       <ul id="solution"></ul>

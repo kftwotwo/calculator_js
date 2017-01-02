@@ -18,4 +18,8 @@ Calculator.prototype.pingPong = function(goal) {
   return output;
 };
 
+Calculator.prototype.add = function(num1, num2) {
+  return num1 + num2;
+}
+
 exports.calculatorModule = Calculator;
