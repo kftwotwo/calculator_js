@@ -20,7 +20,7 @@ $(document).ready(function() {
     var num2 = parseInt($('#num2').val());
     var operator = $('#operator').val();
     var output = simpleCalculator[operator](num1, num2);
-    $('#solution').append(`<li>${operator} ${num1} and ${num2}</li>`);
+    $('#solution').append(`<li>${operator} ${num1} and ${num2}:</li>`);
     $('#solution').append("<li>" + output + "</li>");
   })
 });

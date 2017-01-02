@@ -23,6 +23,17 @@ Calculator.prototype.add = function(num1, num2) {
   return num1 + num2;
 }
 
+Calculator.prototype.subtract = function(num1, num2) {
+  return num1 - num2;
+}
+
+Calculator.prototype.divide = function(num1, num2) {
+  return num1 / num2;
+}
+
+Calculator.prototype.multiply = function(num1, num2) {
+  return num1 * num2;
+}
 exports.calculatorModule = Calculator;
 
 },{}],2:[function(require,module,exports){
@@ -48,7 +59,7 @@ $(document).ready(function() {
     var num2 = parseInt($('#num2').val());
     var operator = $('#operator').val();
     var output = simpleCalculator[operator](num1, num2);
-    $('#solution').append(`<li>${operator} ${num1} and ${num2}</li>`);
+    $('#solution').append(`<li>${operator} ${num1} and ${num2}:</li>`);
     $('#solution').append("<li>" + output + "</li>");
   })
 });
